@@ -12,7 +12,10 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
-    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
 
     <title>Crud</title>
   </head>
@@ -56,26 +59,75 @@
     </nav>
 
     <div class="container mt-4">
-        <div class="card border-secondary">
-            <div class="card-header">Nuevo Registro</div>
-            <div class="card-body">
-                <form action="/save" method="POST">
-                    <div class="mb-3">
-                    <label for="user" class="form-label">Usuario</label>
-                    <input type="text" class="form-control" id="user" name="user" tabindex="1">
-                    </div>
-                    <div class="mb-3">
-                    <label for="user" class="form-label">Rol</label>
-                    <select name="rol" id="rol" class="form-select" tabindex="2">
-                        <option value="admin" selected>Admin</option>
-                        <option value="data entry">Data Entry</option>
-                    </select>
-                    </div>
-                    <button type="submit" class="btn btn-primary" tabindex="5">Guardar</button>
-                    <a href="/" class="btn btn-secondary">Cancelar</a>
-                </form>
+      <div class="card border-secondary">
+        <div class="card-header">Nuevo Registro</div>
+        <div class="card-body">
+          <form action="/save" method="POST">
+            <div class="mb-3">
+              <label for="user" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="user"
+                name="user"
+                tabindex="1"
+              />
             </div>
+            <div class="mb-3">
+              <label for="user" class="form-label">Profesion</label>
+              <select name="rol" id="rol" class="form-select" tabindex="2">
+                <option value="ingeniero">Ingeniero</option>
+                <option value="TecConstruccion">Tec. construccion</option>
+                <option value="Telecomunicaciones">Telecomunicaciones</option>
+                <option value="Químico">Químico</option>
+                <option value="Electricista">Electricista</option>
+                <option value="Técnico de sonido">Técnico de sonido</option>
+                <option value="Periodista">Periodista</option>
+                <option value="Enfermero">Enfermero</option>
+                <option value="Psicólogo">Psicólogo</option>
+                <option value="Técnico en turismo">Técnico en turismo</option>
+                <option value="Historiador">Historiador</option>
+                <option value="Politólogo">Politólogo</option>
+                <option value="Contador">Contador</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="user" class="form-label" value="edad">Edad</label>
+              <input
+                type="text"
+                class="form-control"
+                id="edad"
+                name="edad"
+                tabindex="3"
+              />
+            </div>
+            <div class="mb-3">
+                <label for="user" class="form-label">Email</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  tabindex="4"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="user" class="form-label">Salario</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="salario"
+                  name="salario"
+                  tabindex="4"
+                />
+              </div>
+            <button type="submit" class="btn btn-primary" tabindex="5">
+              Guardar
+            </button>
+            <a href="/" class="btn btn-secondary">Cancelar</a>
+          </form>
         </div>
+      </div>
     </div>
 
     <script
